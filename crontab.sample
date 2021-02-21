@@ -1,0 +1,49 @@
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# m h  dom mon dow   command
+
+#* * * * * 2021/twiddle.py --pulses 10 --on 50 --delay 50
+* * * * *  date > junk_watchdog
+
+30 6-23 * * * 2021/twiddle.py --pulses 1 --on 25 --delay 100
+0 7 * * * 2021/twiddle.py --pulses 7 --on 25 --delay 1000
+0 8 * * * 2021/twiddle.py --pulses 8 --on 25 --delay 1000
+0 9 * * * 2021/twiddle.py --pulses 9 --on 25 --delay 1000
+0 10 * * * 2021/twiddle.py --pulses 10 --on 25 --delay 1000
+0 11 * * * 2021/twiddle.py --pulses 11 --on 25 --delay 1000
+0 12 * * * 2021/twiddle.py --pulses 12 --on 25 --delay 1000
+0 13 * * * 2021/twiddle.py --pulses 1 --on 25 --delay 1000
+0 14 * * * 2021/twiddle.py --pulses 2 --on 25 --delay 1000
+0 15 * * * 2021/twiddle.py --pulses 3 --on 25 --delay 1000
+0 16 * * * 2021/twiddle.py --pulses 4 --on 25 --delay 1000
+0 17 * * * 2021/twiddle.py --pulses 5 --on 25 --delay 1000
+0 18 * * * 2021/twiddle.py --pulses 6 --on 25 --delay 1000
+0 19 * * * 2021/twiddle.py --pulses 7 --on 25 --delay 1000
+0 20 * * * 2021/twiddle.py --pulses 8 --on 25 --delay 1000
+0 21 * * * 2021/twiddle.py --pulses 9 --on 25 --delay 1000
+0 22 * * * 2021/twiddle.py --pulses 10 --on 25 --delay 1000
+0 23 * * * 2021/twiddle.py --pulses 11 --on 25 --delay 1000
+0 0 * * * 2021/twiddle.py --pulses 12 --on 25 --delay 1000
+
+55 17 * * * 2021/twiddle.py --pulses 6 --on 25 --delay 100
+
+# YMS Davy
+0   8 * * 1-5 2021/twiddle.py --pulses 3 --on 25 --delay 100
+30  9 * * 1-5 2021/twiddle.py --pulses 3 --on 25 --delay 100
+37  9 * * 1-5 2021/twiddle.py --pulses 3 --on 25 --delay 100
+07 11 * * 1-5 2021/twiddle.py --pulses 3 --on 25 --delay 100
+14 11 * * 1-5 2021/twiddle.py --pulses 3 --on 25 --delay 100
+13 13 * * 1-5 2021/twiddle.py --pulses 3 --on 25 --delay 100
+20 13 * * 1-5 2021/twiddle.py --pulses 3 --on 25 --delay 100
+50 14 * * 1-5 2021/twiddle.py --pulses 3 --on 25 --delay 100
+
+# YHS Liz
+20 07 * * 1-5 2021/twiddle.py --pulses 2 --on 25 --delay 100
+55 08 * * 1-5 2021/twiddle.py --pulses 2 --on 25 --delay 100
+03 09 * * 1-5 2021/twiddle.py --pulses 2 --on 25 --delay 100
+53 09 * * 1-5 2021/twiddle.py --pulses 2 --on 25 --delay 100
+21 10 * * 1-5 2021/twiddle.py --pulses 2 --on 25 --delay 100
+21 12 * * 1-5 2021/twiddle.py --pulses 2 --on 25 --delay 100
+29 12 * * 1-5 2021/twiddle.py --pulses 2 --on 25 --delay 100
+05 14 * * 1-5 2021/twiddle.py --pulses 2 --on 25 --delay 100
+
